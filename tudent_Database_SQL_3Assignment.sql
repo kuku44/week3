@@ -1,6 +1,13 @@
 
 USE sales;
 
+-- Create the student table
+CREATE TABLE IF NOT EXISTS student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+    );
+
 -- Insert three students (only if they are not already inserted)
 INSERT INTO student (id, fullName, age)
 VALUES
